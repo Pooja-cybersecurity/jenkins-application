@@ -4,8 +4,8 @@ pipeline {
   stage('Compiled stage') {
   
   steps {
-  withMaven(maven:'Maven')
-  { echo "mvn clean compiled Stages"}
+  withMaven(maven: 'Maven')
+  {sh 'mvn clean compiled Stages'}
   } 
  }
  
