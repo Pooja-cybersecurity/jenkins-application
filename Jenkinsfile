@@ -5,7 +5,7 @@ pipeline {
   stage('Compiled stage') {
   
   steps {
-    def mvnHome = tool name: 'Maven', type: 'maven'
+    def @mvnHome = tool name: 'Maven', type: 'maven'
     withMaven(maven: 'Maven')
      {
        
