@@ -1,6 +1,7 @@
 pipeline {
   agent any 
   stages {
+    tool name: 'Maven', type: 'maven'
   stage('Compiled stage') {
   
   steps {
